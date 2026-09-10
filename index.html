@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Worldwide Calendar — V3</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div><h1>Worldwide Calendar</h1><p>Version 3 · global dates, observances, religion, astronomy and time</p></div>
+  <div class="nav"><button id="today">Today</button><button id="prev">‹</button><button id="next">›</button></div>
+</header>
+<section class="filters">
+  <label>Year <input id="year" type="number" min="1900" max="2100"></label>
+  <label>Region <select id="region"></select></label>
+  <label>Search <input id="search" type="search" placeholder="holiday, moon, MLK, Diwali…"></label>
+</section>
+<section id="cats" class="cats"></section>
+<main>
+  <section class="calendar">
+    <div class="month"><h2 id="title"></h2><span id="count"></span></div>
+    <div class="weekdays" id="weekdays"></div>
+    <div class="grid" id="grid"></div>
+  </section>
+  <aside id="details"><h2>Select a date</h2><p>Hover over or click a day to see its complete event stack.</p></aside>
+</main>
+<footer>Worldwide Calendar V3 · modular event engine</footer>
+<script src="app.js"></script>
+</body>
+</html>
